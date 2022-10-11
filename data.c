@@ -9,6 +9,11 @@ Contact: moranski@mail.uoguelph.ca
 
 #include "dataFunc.h"
 
+int threadNum = 0;
+int gridSize = 0;
+int iterate = 0;
+int curGrid = 0;
+
 int main (int argc, char * argv[])
 {
 	long thread;
@@ -127,7 +132,7 @@ int main (int argc, char * argv[])
 	}
 
 	freeGrid();					// Frees the grids.
-	free (thread_handles);
+	//free (thread_handles);
 
 	return EXIT_SUCCESS;
 }

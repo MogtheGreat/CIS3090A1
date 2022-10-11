@@ -48,7 +48,7 @@ int isFull (cellStatus *queue)
 int isEmpty (cellStatus *queue)
 {
 	return (queue -> size == 0);
-}// end of isEmpty
+} // end of isEmpty
 
 /*
 	- stores a cell location in a node
@@ -66,7 +66,7 @@ static cellLoc createNode (int row, int col)
 	temp.col = col;
 
 	return temp;
-} // end of createNode
+}// end of createNode
 
 /*
 	Adds the cell to the end of the queue.
@@ -122,4 +122,4 @@ void destroyQue (cellStatus *queue)
 {
 	free (queue -> cellQue);
 	queue -> cellQue = NULL;
-} // End of destroyQue
+}// End of destroyQue

@@ -19,18 +19,18 @@ Contact: moranski@mail.uoguelph.ca
 #ifndef _TASKFUNC_H_
 #define _TASKFUNC_H_
 
-int gridSize;
-int** gridOne;
-int** gridTwo;
-int curGrid;
-int countThr;
-int done;
-pthread_mutex_t countMutex;
-pthread_mutex_t addMutex;
-pthread_mutex_t removeMutex;
-pthread_cond_t allToGet;
-cellStatus addQue;
-cellStatus removeQue;
+extern int gridSize;
+extern int** gridOne;
+extern int** gridTwo;
+extern int curGrid;
+extern int countThr;
+extern int done;
+extern pthread_mutex_t countMutex;
+extern pthread_mutex_t addMutex;
+extern pthread_mutex_t removeMutex;
+extern pthread_cond_t allToGet;
+extern cellStatus addQue;
+extern cellStatus removeQue;
 
 int checkArg (int argc, char * argv[]);
 

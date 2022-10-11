@@ -9,6 +9,20 @@ Contact: moranski@mail.uoguelph.ca
 
 #include "taskFunc.h"
 
+//global variables
+int gridSize;
+int** gridOne;
+int** gridTwo;
+int curGrid;
+int countThr;
+int done;
+cellStatus addQue;
+cellStatus removeQue;
+pthread_mutex_t countMutex;
+pthread_mutex_t addMutex;
+pthread_mutex_t removeMutex;
+pthread_cond_t allToGet;
+
 /*
 	- Checks to see if the command line arguements are the right
 	type
@@ -63,7 +77,8 @@ int checkArg (int argc, char * argv[])
 	if (argc < 3)
 	{
 		printf ("There must be at least 2 arguments in the command line!\n");
-		printf ("The required arguments are grid-size and the number of iterations.\n");
+		printf ("The required arguments are grid-size(int greater than zero) and the number of iterations(int greater than zero).\n");
+		printf("./task size iterations");
 		return 0;
 	}
 
@@ -473,7 +488,6 @@ static int checkNeighbours (int row, int col, int live)
 	{
 		return 1;
 	}
-	// Dead Cell (THIS CAN'T BE! I AM PERFECTION! ..... Sorry DBz joke)
 	else
 	{
 		return 0;

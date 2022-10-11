@@ -24,7 +24,7 @@ memory2:
 	valgrind --leak-check=yes --track-origins=yes ./task 6 2 -d
 
 run:
-	./data 4 10 100
+	./data 4 10 100 -d
 
 run2:
 	./data 2 100 5 -d

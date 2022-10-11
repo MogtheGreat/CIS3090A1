@@ -8,6 +8,9 @@ Contact: moranski@mail.uoguelph.ca
 */
 #include "dataFunc.h"
 
+int** gridOne = NULL;
+int** gridTwo = NULL;
+
 /*
 	- Checks to see if the command line arguements are the right
 	type
@@ -358,7 +361,6 @@ static int checkNeighbours (int row, int col, int live)
 	{
 		return 1;
 	}
-	// Dead Cell (THIS CAN'T BE! I AM PERFECTION! ..... Sorry DBz joke)
 	else
 	{
 		return 0;

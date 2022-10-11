@@ -1,5 +1,5 @@
 # CIS3090A1
-<h1>Guelph CIS 3090 Parallel Programming Assignment One</h1>
+<h1>CIS 3090 Parallel Programming Assignment One</h1>
 <h2>Intro</h2>
 <div>
 	<p>This assignment is broken into two separate programs:

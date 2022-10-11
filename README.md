@@ -1,4 +1,3 @@
-# CIS3090A1
 <h1>Parallel Programming: Conway's Game of Life</h1>
 <h2>Intro</h2>
 <div>
